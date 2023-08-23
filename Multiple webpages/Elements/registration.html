@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  type="text/css" rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <h1 class="header1" id="hr">Registration form</h1>
+    <form action="submit.html" method="post">
+        <fieldset class="name">
+        <label for="name">Name:<input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+     
+        <label for="email">Email:<input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+     
+        <label for="password">Password:<input type="password" name="password" id="password" placeholder="Enter your password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"></label>
+        <label for="cpassword">    Confirm Password: <input type="password" name="cpassword" id="cpassword" placeholder="Confirm your password" required></label>
+        
+        <label for="Resume" accept="image/*,.pdf" >Upload your resume</label>
+        <input type="file" name="Resume" id="Resume" placeholder="Resume" required>
+
+        <div class="checkbox-container">
+            <label class="checkbox-label" for="terms-and-conditions"><a href="t&c.html">Terms and conditions:</a></label>
+            <input type="checkbox" class="checkbox" name="terms-and-conditions" id="terms-and-conditions" required>
+            
+        </div>
+    <input type="submit"  class="submit" value="Submit" target="_blank">
+</fieldset>
+        </form>
+</body>
+</html>
